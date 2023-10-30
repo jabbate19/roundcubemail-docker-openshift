@@ -4,3 +4,4 @@ RUN sed -i 's/80/8080/g' /etc/apache2/ports.conf; sed -i 's/80/8080/g' /etc/apac
 
 RUN chmod 777 /etc/locale.gen; chmod 777 /tmp
 
+RUN echo "$config['mail_domain'] = 'csh.rit.edu';" > /var/www/html/config/config.inc.php
